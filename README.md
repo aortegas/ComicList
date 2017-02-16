@@ -1,1 +1,3 @@
-# KeepCoding Engineering Master BootCamp - iOS Advanced Development (RxSwift)
+# ComicList
+
+Swift project using RxSwift, RxCocoa, MVVM & CoreData
