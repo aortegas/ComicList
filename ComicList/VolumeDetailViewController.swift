@@ -51,6 +51,7 @@ class VolumeDetailViewController: UIViewController {
     private func setupView() {
         
         view.backgroundColor = UIColor(named: .detailBackground)
+        navigationItem.title = viewModel.summary.title
     }
     
     private func setupBindings() {
