@@ -49,12 +49,12 @@
 		D3212E4E1CFEC41900DDCC0B /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3212E4D1CFEC41900DDCC0B /* Volume.swift */; };
 		D3212E501CFEC75700DDCC0B /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3212E4F1CFEC75700DDCC0B /* JSONDecodable.swift */; };
 		D3212E541D003FCF00DDCC0B /* ComicVineSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3212E531D003FCF00DDCC0B /* ComicVineSession.swift */; };
-		D34500A81E4A258C005B41AB /* VolumeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34500A71E4A258C005B41AB /* VolumeDetailViewController.xib */; };
 		D36ACCF31D018E4000EA62C1 /* ManagedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36ACCF21D018E4000EA62C1 /* ManagedStore.swift */; };
 		D36ACCF51D019E8400EA62C1 /* DirectoryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36ACCF41D019E8400EA62C1 /* DirectoryHelpers.swift */; };
 		D36ACCF91D01AE6300EA62C1 /* ComicList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D36ACCF71D01AE6300EA62C1 /* ComicList.xcdatamodeld */; };
 		D36ACCFB1D055B4B00EA62C1 /* ManagedVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36ACCFA1D055B4B00EA62C1 /* ManagedVolume.swift */; };
 		D36ACCFD1D0563EA00EA62C1 /* ManagedObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36ACCFC1D0563EA00EA62C1 /* ManagedObjectType.swift */; };
+		D3718BDE1E56455C00D2E22F /* VolumeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3718BDD1E56455C00D2E22F /* VolumeDetailViewController.xib */; };
 		D38443861D114A82009D0781 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38443851D114A82009D0781 /* Issue.swift */; };
 		D3E286211D0EB9C100BF7CCC /* VolumeListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E286201D0EB9C100BF7CCC /* VolumeListStore.swift */; };
 		D3E286231D1017B300BF7CCC /* VolumeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E286221D1017B300BF7CCC /* VolumeDetail.swift */; };
@@ -122,12 +122,12 @@
 		D3212E4D1CFEC41900DDCC0B /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		D3212E4F1CFEC75700DDCC0B /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		D3212E531D003FCF00DDCC0B /* ComicVineSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicVineSession.swift; sourceTree = "<group>"; };
-		D34500A71E4A258C005B41AB /* VolumeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeDetailViewController.xib; sourceTree = "<group>"; };
 		D36ACCF21D018E4000EA62C1 /* ManagedStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedStore.swift; sourceTree = "<group>"; };
 		D36ACCF41D019E8400EA62C1 /* DirectoryHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryHelpers.swift; sourceTree = "<group>"; };
 		D36ACCF81D01AE6300EA62C1 /* ComicList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComicList.xcdatamodel; sourceTree = "<group>"; };
 		D36ACCFA1D055B4B00EA62C1 /* ManagedVolume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedVolume.swift; sourceTree = "<group>"; };
 		D36ACCFC1D0563EA00EA62C1 /* ManagedObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectType.swift; sourceTree = "<group>"; };
+		D3718BDD1E56455C00D2E22F /* VolumeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeDetailViewController.xib; sourceTree = "<group>"; };
 		D38443851D114A82009D0781 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		D3E286201D0EB9C100BF7CCC /* VolumeListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeListStore.swift; sourceTree = "<group>"; };
 		D3E286221D1017B300BF7CCC /* VolumeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeDetail.swift; sourceTree = "<group>"; };
@@ -343,7 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				82A74EB01C417833001CF7CF /* VolumeDetailViewController.swift */,
-				D34500A71E4A258C005B41AB /* VolumeDetailViewController.xib */,
+				D3718BDD1E56455C00D2E22F /* VolumeDetailViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -522,7 +522,7 @@
 				8223D3F21C3065F800473005 /* VolumeListViewController.xib in Resources */,
 				822675B51C1DCCD50008297C /* LaunchScreen.storyboard in Resources */,
 				822675B21C1DCCD50008297C /* Assets.xcassets in Resources */,
-				D34500A81E4A258C005B41AB /* VolumeDetailViewController.xib in Resources */,
+				D3718BDE1E56455C00D2E22F /* VolumeDetailViewController.xib in Resources */,
 				829137121C43F98400BD459D /* IssueCell.xib in Resources */,
 				8223D3E41C2FF19700473005 /* Colors.txt in Resources */,
 				825B653B1C4122750001CC06 /* SearchResultsViewController.xib in Resources */,

@@ -24,8 +24,8 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OUv-Ms-KKX">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CfE-YD-wf3">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="569.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CfE-YD-wf3">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="589.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nhe-cN-43T" userLabel="Header" customClass="VolumeDetailHeaderView" customModule="ComicList" customModuleProvider="target">
                                     <rect key="frame" x="16" y="8" width="288" height="192"/>
@@ -80,7 +80,7 @@
                                     </connections>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6EB-Zg-lOb" userLabel="Description" customClass="VolumeDetailDescriptionView" customModule="ComicList" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="200" width="288" height="175"/>
+                                    <rect key="frame" x="16" y="210" width="288" height="175"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h99-Va-Pki">
                                             <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
@@ -102,7 +102,7 @@
                                     </connections>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8aa-cI-3Pf" userLabel="Issues" customClass="VolumeDetailIssuesView" customModule="ComicList" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="375" width="288" height="186.5"/>
+                                    <rect key="frame" x="16" y="395" width="288" height="186.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Issues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc3-0J-Yda">
                                             <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
@@ -110,18 +110,43 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dlw-4B-qHE">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXp-bN-fKQ">
                                             <rect key="frame" x="0.0" y="24.5" width="288" height="162"/>
+                                            <subviews>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMh-K2-DS5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="288" height="162"/>
+                                                    <subviews>
+                                                        <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dlw-4B-qHE">
+                                                            <rect key="frame" x="-5" y="-0.5" width="288" height="162"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="162" id="p1j-NO-o5l"/>
+                                                            </constraints>
+                                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="12" minimumInteritemSpacing="10" id="Uur-j9-arg">
+                                                                <size key="itemSize" width="80" height="162"/>
+                                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            </collectionViewFlowLayout>
+                                                        </collectionView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="dlw-4B-qHE" secondAttribute="trailing" constant="-5" id="0RX-bZ-Qsn"/>
+                                                        <constraint firstItem="dlw-4B-qHE" firstAttribute="top" secondItem="OMh-K2-DS5" secondAttribute="top" constant="-0.5" id="30V-ck-0sp"/>
+                                                        <constraint firstAttribute="bottom" secondItem="dlw-4B-qHE" secondAttribute="bottom" constant="0.5" id="ZP6-vA-soO"/>
+                                                        <constraint firstItem="dlw-4B-qHE" firstAttribute="leading" secondItem="OMh-K2-DS5" secondAttribute="leading" constant="-5" id="rfl-xe-zLk"/>
+                                                        <constraint firstItem="dlw-4B-qHE" firstAttribute="width" secondItem="OMh-K2-DS5" secondAttribute="width" id="u9z-dV-o30"/>
+                                                    </constraints>
+                                                </scrollView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="162" id="p1j-NO-o5l"/>
+                                                <constraint firstAttribute="trailing" secondItem="OMh-K2-DS5" secondAttribute="trailing" id="B4E-rE-Rgy"/>
+                                                <constraint firstAttribute="bottom" secondItem="OMh-K2-DS5" secondAttribute="bottom" id="KeF-id-KTs"/>
+                                                <constraint firstItem="OMh-K2-DS5" firstAttribute="top" secondItem="mXp-bN-fKQ" secondAttribute="top" id="LIo-fV-qRX"/>
+                                                <constraint firstAttribute="height" constant="162" id="MpN-7D-oEy"/>
+                                                <constraint firstItem="OMh-K2-DS5" firstAttribute="leading" secondItem="mXp-bN-fKQ" secondAttribute="leading" id="TRI-Z4-qKF"/>
                                             </constraints>
-                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="12" minimumInteritemSpacing="10" id="Uur-j9-arg">
-                                                <size key="itemSize" width="80" height="162"/>
-                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </collectionViewFlowLayout>
-                                        </collectionView>
+                                        </view>
                                     </subviews>
                                     <connections>
                                         <outlet property="collectionView" destination="dlw-4B-qHE" id="dFG-tV-nrS"/>
